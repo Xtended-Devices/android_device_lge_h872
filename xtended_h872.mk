@@ -19,7 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit some common Havoc stuff.
-$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
 # Inherit from h872 device
 $(call inherit-product, device/lge/h872/device.mk)
@@ -31,10 +31,12 @@ VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH_OVERRIDE)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_DEVICE := h872
-PRODUCT_NAME := havoc_h872
+PRODUCT_NAME := xtended_h872
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := LG-H872
 PRODUCT_MANUFACTURER := LGE
+
+TARGET_BOOT_ANIMATION_RES := 1440
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="lucye" \

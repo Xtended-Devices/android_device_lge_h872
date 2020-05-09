@@ -14,10 +14,10 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_h872.mk
+    $(LOCAL_DIR)/xtended_h872.mk
 
 	
 COMMON_LUNCH_CHOICES := \
-    havoc_h872-user \
-    havoc_h872-userdebug \
-    havoc_h872-eng
+    xtended_h872-user \
+    xtended_h872-userdebug \
+    xtended_h872-eng
